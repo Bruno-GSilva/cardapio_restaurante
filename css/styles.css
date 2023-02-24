@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    background-color: #eeae55; 
+}
+
+section .conteudo-principal{
+    margin: 30px;
+    display: flex;
+}
+
+body{
+    background-color: rgb(129, 85, 85);
+   
+}
+div.categorias{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+   
+ }
+
+  ul{
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+  }
+    
+
+section .categorias .frutosDoMar{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border-color:#eeae55;
+    border-width: 3px;
+    border-style: solid;
+    
+
+}
+section .categorias .bebidas{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border-color:#eeae55;
+    border-width: 3px;
+    border-style: solid;
+    }
+section .categorias .carnes{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border-color:#eeae55;
+    border-width: 3px;
+    border-style: solid;
+}
+section .categorias .sobremesa{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border-color:#eeae55;
+    border-width: 3px;
+    border-style: solid;
+}
+
+section .categorias .massas{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border-color:#eeae55;
+    border-width: 3px;
+    border-style: solid;
+}
+
+p{
+    color: white;
+    margin: 30px;
+    display: flex;   
+}
+
+ 
+img{
+    width: 200px;
+    height: 200px;
+    margin: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25%;
+    border-color:#eeae55;
+    border-width: 3px;
+     border-style: solid;
+   
+}
+
+
+footer{
+    background-color: #eeae55;
+    justify-content: center;
+    text-align: center;
+    color:rgba(129, 3, 29, 0.993)
+}
