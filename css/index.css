@@ -8,17 +8,37 @@
 header{
     background-color: #eeae55;
     width: 100vw;
-    height: 250px;
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+#navbarHeader ul{
+    display: flex;
+    gap: 80px;
+    font-size: 32px;
+    font-weight: bold;
+}
+#navbarHeader ul li a{
+    color: white;
+}
+
+header > span:last-of-type > a{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#navbarHeader ul li a:hover , header > span:last-of-type > a:hover{
+    color: red;
 }
 
 #logo{
     display: flex;
-    width: 250px;
-    height: 250px;
-} 
-
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid red; */
+}
 body{
     background-color: rgb(129, 85, 85);
    
@@ -39,7 +59,7 @@ ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin: 30px;
+    /* margin: 30px; */
     justify-content:space-around;
 
 }

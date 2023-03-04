@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Cardápio Restaurante Sabor do Nordeste</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 <head>
 
 <header>
-    <div id="logo">
-        <img src="images/cardapio/Logo-sabor-nordeste.png">
-    </div>
+    <span id="logo"><img src="images/cardapio/Logo-sabor-nordeste.png"></span>
+    <nav id="navbarHeader">
+      <ul>
+        <li><a href="#">menu</a></li>
+        <li><a href="#">sobre nos</a></li>
+        <li><a href="#">cardapio</a></li>
+        <li><a href="#footer">contato</a></li>
+      </ul>
+    </nav>
+    <span><a href="/pages/login.html">login</a></span>
 </header>
 
 
 <body>
 
-
     <div class="container">
         <section id="atalhos">
-                <ul>
-                    <li><a href="#frutosdomar"><img class="fotinha" src="images/cardapio/frutosDoMar.jpg" alt="Frutos do Mar"></a></li>
-                    <li><a href="#carnes"><img class="fotinha" src="images/cardapio/carnes.jpg" alt="Carnes"></a></li>
-                    <li><a href="#massas"><img class="fotinha" src="images/cardapio/massas.jpg" alt="Massas"></a></li>
-                    <li><a href="#bebidas"><img class="fotinha" src="images/cardapio/bebidas.jpg" alt="Bebidas"></a></li>
-                    <li><a href="#sobremesas"><img class="fotinha" src="images/cardapio/sobremesas.jpg" alt="Sobremesas"></a></li>
-                </ul>
+          <nav>
+            <ul>
+              <li><a href="#frutosdomar"><img class="fotinha" src="images/cardapio/frutosDoMar.jpg" alt="Frutos do Mar"></a></li>
+              <li><a href="#carnes"><img class="fotinha" src="images/cardapio/carnes.jpg" alt="Carnes"></a></li>
+              <li><a href="#massas"><img class="fotinha" src="images/cardapio/massas.jpg" alt="Massas"></a></li>
+              <li><a href="#bebidas"><img class="fotinha" src="images/cardapio/bebidas.jpg" alt="Bebidas"></a></li>
+              <li><a href="#sobremesas"><img class="fotinha" src="images/cardapio/sobremesas.jpg" alt="Sobremesas"></a></li>
+          </ul>
+          </nav>
         </section>
-
-       
             <div class="menu">
               <h2 class="menu-group-heading">
                 Frutos do Mar
@@ -120,7 +126,7 @@
 
 
 
-<footer>
+<footer id="footer">
     <div class="footer-content">
         <h3>OBRIGADO PELA PREFERÊNCIA</h3>
         <p>Avenida Santos Dumont, 2850</p>
