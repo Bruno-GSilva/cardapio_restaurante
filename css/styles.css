@@ -6,104 +6,155 @@
 }
 
 header{
-    display:flex;
+    background-color: #eeae55;
+    width: 100vw;
+    height: 250px;
     justify-content: center;
-    background-color: #eeae55; 
-}
-
-section .conteudo-principal{
-    margin: 30px;
     display: flex;
 }
+
+#logo{
+    display: flex;
+    width: 250px;
+    height: 250px;
+} 
 
 body{
     background-color: rgb(129, 85, 85);
    
 }
-div.categorias{
-    display: flex;
-    margin-top: 15px;
-    justify-content: space-around;
-   
- }
 
-  ul{
+.fotinha{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-color:#eeae55;
+    border-width: 3px;
+    border-style: solid;
+    margin: 15px;
+    
+}
+
+ul{
     list-style: none;
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
-  }
-    
-
-section .categorias .frutosDoMar{
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    border-color:#eeae55;
-    border-width: 3px;
-    border-style: solid;
-    
-
-}
-section .categorias .bebidas{
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    border-color:#eeae55;
-    border-width: 3px;
-    border-style: solid;
-    }
-section .categorias .carnes{
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    border-color:#eeae55;
-    border-width: 3px;
-    border-style: solid;
-}
-section .categorias .sobremesa{
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    border-color:#eeae55;
-    border-width: 3px;
-    border-style: solid;
-}
-
-section .categorias .massas{
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    border-color:#eeae55;
-    border-width: 3px;
-    border-style: solid;
-}
-
-p{
-    color: white;
+    flex-wrap: wrap;
     margin: 30px;
-    display: flex;   
+    justify-content:space-around;
+
 }
 
- 
-img{
-    width: 200px;
-    height: 200px;
-    margin: 120px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 25%;
-    border-color:#eeae55;
-    border-width: 3px;
-     border-style: solid;
-   
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5em;
 }
+  
+.menu {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+  
+.menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #421717;
+}
+  
+.menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+  
+  .menu-item {
+    display: flex;
+}
+  
+.menu-item-imagem {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+}
+  
+.menu-item-text {
+    flex-grow: 1;
+}
+  
+.menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+  
+.menu-item-name {
+    margin-right: 1.5em;
+}
+  
+.menu-item-description {
+    line-height: 1.6;
+  }
 
+@media screen and (min-width: 800px) {
+    .menu {
+      font-size: 16px;
+    }
+  
+    .menu-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .menu-item-imagem {
+      width: 125px;
+      height: 125px;
+    }
+    .fotinha {
+      width: 125px;
+      height: 125px;
+    }
+}
+  
+
+
+/* FOOTER */
 
 footer{
     background-color: #eeae55;
+    width: 100%;
+    padding-top: 30px;
+    color:rgba(129, 3, 29, 0.993);
+
+}
+
+.footer-content{
+    display: flex;
     justify-content: center;
     text-align: center;
-    color:rgba(129, 3, 29, 0.993)
+    flex-direction: column;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    margin: 10px auto;
+    font-size: 16px;
+    line-height: 5px;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
 }

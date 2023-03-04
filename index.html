@@ -6,88 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Cardápio Restaurante Sabor do Nordeste</title>
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<head>
 
 <header>
-    <div class="logo">
+    <div id="logo">
         <img src="images/cardapio/Logo-sabor-nordeste.png">
     </div>
 </header>
-<hr>
-<body>   
-    <section class="conteudo-principal">
-        <div class="categorias">
-            <ul>
-                <li><img class="frutosDoMar" src="images/cardapio/frutosDoMar.jpg" alt=""></li>
-                <li><img class="carnes" src="images/cardapio/carnes.jpg" alt=""></li>
-                <li><img class="bebidas" src="images/cardapio/bebidas.jpg" alt=""></li>
-                <li><img class="sobremesa" src="images/cardapio/sobremesas.jpg" alt=""></li>
-                <li><img class="massas" src="images/cardapio/massas.jpg" alt=""></li>
-            </ul>
-        </div>
-        <div class="cardapios">
-            <img class="prato1" src="images/cardapio/prato1.jpg" alt="foto do prato de tilapia assada">
-                <p>Tilapia Assada<br>
-                    1 kg de peixe tilapia assado na brasa, acompanha arroz<br>
-                    ou baião, macaxira frita, salada verde e um delicioso<br>
-                    molho do chefe.<br>
-                    Serve 2 pessoas.<br>
-                    R$: 68,00 reais
-                </p>
-            <img class="prato2" src="images/cardapio/parato2.jpg" alt="Foto de camarao ao molho">
-                <p>Camarão ao molho<br>
-                    200 gramas de camarão ao molho madeira.<br>
-                    Acompanha arroz, salada verde, molho do chefe.<br>
-                    Serve 2 pessoas.<br>
-                    R$: 55,00
-                </p>
-            <img class="prato3" src="images/cardapio/prato3.png" alt="Foto de peixe grelhado com brocolis e arroz">
-                <p> FILE DE PEIXE GRELHADO<BR>
-                    Filé de peixe grelhado com azeite, manteiga, alho, <br>
-                    cenoura picada, alecrim fresco e limão. <br>
-                    Acompanha legumes salteados e arroz com brócolis.<br>
-                    Serve 2 pessoas.<br>
-                    R$: 98,00 reais
-                </p>
-            <img class="prato4" src="images/cardapio/prato4.png" alt="Foto de carangueijo">
-            <p>COMBO CARANGUEJADA 20 UNIDADES <br>
-                20 unidades, acompanha caldo, molho verde 400 ml,<br>
-                farofa 400g e embalagem.
-                <br>
-                Serve 4 pessoas<br>
-                R$= 89,00 reais
-                <p>
-            <img class="carne1" src="images/cardapio/carne1.webp" alt="Foto de carnes">
-            <p>MISTÃO PARA 2 PESSOAS<br>
-                50g maminha argentina,150g filé de frango,1 linguinça,<br>
-                baião de dois,batata frita,vinagrete e farofa<br>
-                Serve 2 pessoas?<br>
-                R$ 71,90.</p>
 
-            <img class= "Carne2" src="images/cardapio/carne2.webp" alt="">    
-            <p>CHURRASCO <br>
-                Bife chorizo bovino importado grelhado (300g)<br>
-            + farofinha (50g)<br>
-            Serve 1 pessoa<br>
-            A partir de 49,90.
-            </p>
 
-            <img class="carne3" src="images/cardapio/carne3.webp" alt="carnes com baião de dois">
-            <p>MEIA CARNE DE SOL DO MARANHÃO (2 PESSOAS)<br>
-                450g de carne de sol de filé mignon. Acompanha baião de dois, <br>
-                farofa de ovos, banana à milanesa, cebola roxa refogada,<br>
-                purê de macaxeira gratinado com queijo coalho e vinagrete.<br>
-                Serve 2 pessoas<br>
-                A partir de R$ 223,00.</p>
-        </div>
-    </section> 
+<body>
+
+
+    <div class="container">
+        <section id="atalhos">
+                <ul>
+                    <li><a href="#frutosdomar"><img class="fotinha" src="images/cardapio/frutosDoMar.jpg" alt="Frutos do Mar"></a></li>
+                    <li><a href="#carnes"><img class="fotinha" src="images/cardapio/carnes.jpg" alt="Carnes"></a></li>
+                    <li><a href="#massas"><img class="fotinha" src="images/cardapio/massas.jpg" alt="Massas"></a></li>
+                    <li><a href="#bebidas"><img class="fotinha" src="images/cardapio/bebidas.jpg" alt="Bebidas"></a></li>
+                    <li><a href="#sobremesas"><img class="fotinha" src="images/cardapio/sobremesas.jpg" alt="Sobremesas"></a></li>
+                </ul>
+        </section>
+
+       
+            <div class="menu">
+              <h2 class="menu-group-heading">
+                Frutos do Mar
+              </h2>
+              <div class="menu-group">
+                <div class="menu-item">
+                  <img class="menu-item-imagem" src="./images/cardapio/prato1.jpg" alt="">
+                  <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Peixe Frito</span>
+                        <span class="menu-item-price">R$98,90</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, obcaecati magni deserunt sunt eligendi, nemo vel cumque a ullam quisquam accusamus asperiores amet et quidem, eos fuga soluta sed maxime.
+                    </p>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <img class="menu-item-imagem" src="./images/cardapio/prato1.jpg" alt="">
+                  <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Peixe Frito</span>
+                        <span class="menu-item-price">R$98,90</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, obcaecati magni deserunt sunt eligendi, nemo vel cumque a ullam quisquam accusamus asperiores amet et quidem, eos fuga soluta sed maxime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h2 class="menu-group-heading">
+                Frutos do Mar
+              </h2>
+              <div class="menu-group">
+                <div class="menu-item">
+                  <img class="menu-item-imagem" src="./images/cardapio/prato1.jpg" alt="">
+                  <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Peixe Frito</span>
+                        <span class="menu-item-price">R$98,90</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, obcaecati magni deserunt sunt eligendi, nemo vel cumque a ullam quisquam accusamus asperiores amet et quidem, eos fuga soluta sed maxime.
+                    </p>
+                  </div>
+                </div>
+                <div class="menu-item">
+                  <img class="menu-item-imagem" src="./images/cardapio/prato1.jpg" alt="">
+                  <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                      <span class="menu-item-name">Peixe Frito</span>
+                      <span class="menu-item-price">R$98,90</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, obcaecati magni deserunt sunt eligendi, nemo vel cumque a ullam quisquam accusamus asperiores amet et quidem, eos fuga soluta sed maxime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
 </body>
-<footer class="gratitude">
-    <h3>Obrigada pela Preferência</h3>
-    Avenida Santos dumond, 2850,<br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.4219567153837!2d-46.89276358576199!3d-21.608475285687188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7cdeb855c9e6b%3A0x68b18b2af9fed838!2sFloresta%20Bar!5e0!3m2!1spt-BR!2sbr!4v1677437236801!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    Contato: (85)9999-99.99,<br>
-    E-mail:sabordonordeste@gmail.com
-    
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footer-content">
+        <h3>OBRIGADO PELA PREFERÊNCIA</h3>
+        <p>Avenida Santos Dumont, 2850</p>
+
+        <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.4219567153837!2d-46.89276358576199!3d-21.608475285687188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7cdeb855c9e6b%3A0x68b18b2af9fed838!2sFloresta%20Bar!5e0!3m2!1spt-BR!2sbr!4v1677437236801!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+
+        <p>Contato: (85)9999-99.99</p>
+        <p>E-mail: contato@sabornordeste.com.br</p>
+    </div>
+
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 Sabor Nordeste</p>
+    </div>
+
 </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
