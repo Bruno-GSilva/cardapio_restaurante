@@ -20,3 +20,7 @@
     --bg-white:#d6d6d6;
     --bg-black:#000814;
 }
+
+::selection{
+    color: var(--bg-yellowDark);
+}
