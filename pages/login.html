@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/725/725852.png" type="icon">
+    <link rel="stylesheet" href="/css/login.css">
+    <script src="formulario.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <span id="logo"><img src="/images/cardapio/Logo-sabor-nordeste.png"></span>
+        <nav id="navbarHeader">
+          <ul>
+            <li><a href="/index.html">menu</a></li>
+            <li><a href="#">sobre nos</a></li>
+            <li><a href="#">cardapio</a></li>
+            <li><a href="#footer">contato</a></li>
+          </ul>
+        </nav>
+        <span><a href="/pages/login.html">login</a></span>
+    </header>
+    <div id="telaLogin">
+        <form id="formRegister">
+            <h3>Se Registre Aqui</h3>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="Digite seu email">
+            <label for="loginR">login</label>
+            <input type="text" id="loginR" required placeholder="Digite seu login">
+            <label for="passwordR">password</label>
+            <input type="password" id="passwordR" required placeholder="Digite sua senha">
+            <button class="btn" id="btn">Login</button>
+        </form>
+        <form id="formLogin">
+            <h3>Faça seu login</h3>
+            <br>
+            <label for="login">login</label>
+            <input type="text" id="login" required placeholder="Digite seu login">
+            <label for="password">password</label>
+            <input type="password" id="password" required placeholder="Digite sua senha">
+        </form>
+    </div>
+    <footer id="footer">
+        <div class="footer-content">
+            <h3>OBRIGADO PELA PREFERÊNCIA</h3>
+            <p>Avenida Santos Dumont, 2850</p>
+            <p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.4219567153837!2d-46.89276358576199!3d-21.608475285687188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7cdeb855c9e6b%3A0x68b18b2af9fed838!2sFloresta%20Bar!5e0!3m2!1spt-BR!2sbr!4v1677437236801!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+            <p>Contato: (85)9999-99.99</p>
+            <p>E-mail: contato@sabornordeste.com.br</p>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 Sabor Nordeste</p>
+        </div>
+    </footer>
 </body>
 </html>

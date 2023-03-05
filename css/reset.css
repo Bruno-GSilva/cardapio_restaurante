@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Inter;
+}
+
+:root{
+    --bg-pink:#FFA3A5;
+    --bg-yellow:#F4E409;
+    --bg-yellowDark:#EEBA0B;
+    --bg-orange:#C36F09;
+    --bg-orangeDark:#A63C06;
+    --bg-red:#710000;
+    --bg-white:#d6d6d6;
+    --bg-black:#000814;
+}

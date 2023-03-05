@@ -1,14 +1,9 @@
-*{
-    margin: 0;
-    padding:0;
-    text-decoration: none;
-    box-sizing: border-box;
-}
+@import url(/css/reset.css);
 
 header{
-    background-color: #eeae55;
-    width: 100vw;
-    justify-content: space-between;
+    background-color: var(--bg-red);
+    width: 100%;
+    justify-content: flex-start;
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -16,7 +11,7 @@ header{
 #navbarHeader ul{
     display: flex;
     gap: 80px;
-    font-size: 32px;
+    font-size: 23px;
     font-weight: bold;
 }
 #navbarHeader ul li a{
@@ -25,22 +20,27 @@ header{
 
 header > span:last-of-type > a{
     color: white;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: bold;
+    margin-left: 450px;
 }
 
 #navbarHeader ul li a:hover , header > span:last-of-type > a:hover{
-    color: red;
+    color: var(--bg-orange);
 }
-
-#logo{
-    display: flex;
+header > #logo{
     width: 150px;
     height: 150px;
-    /* border: 1px solid red; */
+    margin-right: 50px;
 }
+header > #logo > img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 body{
-    background-color: rgb(129, 85, 85);
+    background-color: var(--bg-orangeDark);
    
 }
 
@@ -48,7 +48,7 @@ body{
     border-radius: 50%;
     width: 80px;
     height: 80px;
-    border-color:#eeae55;
+    /* border-color:#eeae55; */
     border-width: 3px;
     border-style: solid;
     margin: 15px;
@@ -142,10 +142,10 @@ ul{
 /* FOOTER */
 
 footer{
-    background-color: #eeae55;
+    background-color: var(--bg-red);
     width: 100%;
     padding-top: 30px;
-    color:rgba(129, 3, 29, 0.993);
+    color:#fff;
 
 }
 
