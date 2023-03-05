@@ -4,45 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Cardápio Restaurante Sabor do Nordeste</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/index.js" defer></script>
 <head>
-
-<header>
-    <div id="logo">
-        <img src="images/cardapio/Logo-sabor-nordeste.png">
-    </div>
-</header>
-
-
-<body>
-
+  <body>
+    <header>
+      <span><a href="/index.html"><img src="/images/cardapio/Logo-sabor-nordeste.png"></a></span>
+      <nav>
+        <ul>
+          <li><a href="/index.html">menu</a></li>
+          <li><a href="#">cardapio</a></li>
+          <li><a href="#">sobre nos</a></li>
+          <li><a href="#footer">contato</a></li>
+        </ul>
+      </nav>
+      <span><a href="/pages/login.html">login</a></span>
+  </header>
 
     <div class="container">
         <section id="atalhos">
-                <ul>
-                    <li><a href="#frutosdomar"><img class="fotinha" src="images/cardapio/frutosDoMar.jpg" alt="Frutos do Mar"></a></li>
-                    <li><a href="#carnes"><img class="fotinha" src="images/cardapio/carnes.jpg" alt="Carnes"></a></li>
-                    <li><a href="#massas"><img class="fotinha" src="images/cardapio/massas.jpg" alt="Massas"></a></li>
-                    <li><a href="#bebidas"><img class="fotinha" src="images/cardapio/bebidas.jpg" alt="Bebidas"></a></li>
-                    <li><a href="#sobremesas"><img class="fotinha" src="images/cardapio/sobremesas.jpg" alt="Sobremesas"></a></li>
-                </ul>
+          <nav>
+            <ul>
+              <li><a href="#frutosdomar"><img class="fotinha" src="images/cardapio/frutosDoMar.jpg" alt="Frutos do Mar"></a></li>
+              <li><a href="#Carnes"><img class="fotinha" src="images/cardapio/carnes.jpg" alt="Carnes"></a></li>
+              <li><a href="#massas"><img class="fotinha" src="images/cardapio/massas.jpg" alt="Massas"></a></li>
+              <li><a href="#bebidas"><img class="fotinha" src="images/cardapio/bebidas.jpg" alt="Bebidas"></a></li>
+              <li><a href="#sobremesas"><img class="fotinha" src="images/cardapio/sobremesas.jpg" alt="Sobremesas"></a></li>
+          </ul>
+          </nav>
         </section>
-
-       
             <div class="menu">
-              <h2 class="menu-group-heading">
-                Frutos do Mar
-              </h2>
+              <h2 class="menu-group-heading" id="frutosdomar">Frutos do Mar</h2>
               <div class="menu-group">
-                <div class="menu-item">
-                  <img class="menu-item-imagem" src="./images/cardapio/prato1.jpg" alt="">
+                <div class="menu-item"><span id="addproduto"><img class="menu-item-imagem" src="./images/cardapio/prato1.jpg" alt=""></span>
                   <div class="menu-item-text">
                     <h3 class="menu-item-heading">
                         <span class="menu-item-name">Peixe Frito</span>
-                        <span class="menu-item-price">R$98,90</span>
+                        <span class="menu-item-price">Valor: R$98.90</span>
                     </h3>
                     <p class="menu-item-description">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, obcaecati magni deserunt sunt eligendi, nemo vel cumque a ullam quisquam accusamus asperiores amet et quidem, eos fuga soluta sed maxime.
@@ -50,11 +49,11 @@
                   </div>
                 </div>
                 <div class="menu-item">
-                  <img class="menu-item-imagem" src="./images/cardapio/prato1.jpg" alt="">
+                  <span><img class="menu-item-imagem" src="./images/cardapio/prato1.jpg" alt=""></span>
                   <div class="menu-item-text">
                     <h3 class="menu-item-heading">
                         <span class="menu-item-name">Peixe Frito</span>
-                        <span class="menu-item-price">R$98,90</span>
+                        <span class="menu-item-price">Valor: R$98.90</span>
                     </h3>
                     <p class="menu-item-description">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, obcaecati magni deserunt sunt eligendi, nemo vel cumque a ullam quisquam accusamus asperiores amet et quidem, eos fuga soluta sed maxime.
@@ -62,16 +61,13 @@
                   </div>
                 </div>
               </div>
-              <h2 class="menu-group-heading">
-                Frutos do Mar
-              </h2>
               <div class="menu-group">
                 <div class="menu-item">
-                  <img class="menu-item-imagem" src="./images/cardapio/prato1.jpg" alt="">
+                  <span><img class="menu-item-imagem" src="./images/cardapio/prato1.jpg" alt=""></span>
                   <div class="menu-item-text">
                     <h3 class="menu-item-heading">
                         <span class="menu-item-name">Peixe Frito</span>
-                        <span class="menu-item-price">R$98,90</span>
+                        <span class="menu-item-price">Valor: R$98.90</span>
                     </h3>
                     <p class="menu-item-description">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, obcaecati magni deserunt sunt eligendi, nemo vel cumque a ullam quisquam accusamus asperiores amet et quidem, eos fuga soluta sed maxime.
@@ -79,11 +75,37 @@
                   </div>
                 </div>
                 <div class="menu-item">
-                  <img class="menu-item-imagem" src="./images/cardapio/prato1.jpg" alt="">
+                  <span><img class="menu-item-imagem" src="./images/cardapio/prato1.jpg" alt=""></span>
+                  <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Peixe Frito</span>
+                        <span class="menu-item-price">Valor: R$98.90</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, obcaecati magni deserunt sunt eligendi, nemo vel cumque a ullam quisquam accusamus asperiores amet et quidem, eos fuga soluta sed maxime.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <h2 class="menu-group-heading" id="Carnes">Carnes</h2>
+              <div class="menu-group">
+                <div class="menu-item">
+                  <span><img class="menu-item-imagem" src="images/cardapio/carne1.webp" alt=""></span>
+                  <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Peixe Frito</span>
+                        <span class="menu-item-price">Valor: R$98.90</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, obcaecati magni deserunt sunt eligendi, nemo vel cumque a ullam quisquam accusamus asperiores amet et quidem, eos fuga soluta sed maxime.
+                    </p>
+                  </div>
+                </div>
+                <div class="menu-item"><span><img class="menu-item-imagem" src="images/cardapio/carne2.webp" alt=""></span>
                   <div class="menu-item-text">
                     <h3 class="menu-item-heading">
                       <span class="menu-item-name">Peixe Frito</span>
-                      <span class="menu-item-price">R$98,90</span>
+                      <span class="menu-item-price">Valor: R$98.90</span>
                     </h3>
                     <p class="menu-item-description">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, obcaecati magni deserunt sunt eligendi, nemo vel cumque a ullam quisquam accusamus asperiores amet et quidem, eos fuga soluta sed maxime.
@@ -92,65 +114,20 @@
                 </div>
               </div>
             </div>
-
-            
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
+    <footer id="footer">
+      <div class="footer-content">
+          <h3>OBRIGADO PELA PREFERÊNCIA</h3>
+          <p>Avenida Santos Dumont, 2850</p>
+          <p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.4219567153837!2d-46.89276358576199!3d-21.608475285687188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7cdeb855c9e6b%3A0x68b18b2af9fed838!2sFloresta%20Bar!5e0!3m2!1spt-BR!2sbr!4v1677437236801!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </p>
+          <p>Contato: (85)9999-99.99</p>
+          <p>E-mail: contato@sabornordeste.com.br</p>
+      </div>
+      <div class="footer-bottom">
+          <p>copyright &copy;2023 Sabor Nordeste</p>
+      </div>
+  </footer>  
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-<footer>
-    <div class="footer-content">
-        <h3>OBRIGADO PELA PREFERÊNCIA</h3>
-        <p>Avenida Santos Dumont, 2850</p>
-
-        <p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.4219567153837!2d-46.89276358576199!3d-21.608475285687188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b7cdeb855c9e6b%3A0x68b18b2af9fed838!2sFloresta%20Bar!5e0!3m2!1spt-BR!2sbr!4v1677437236801!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </p>
-
-        <p>Contato: (85)9999-99.99</p>
-        <p>E-mail: contato@sabornordeste.com.br</p>
-    </div>
-
-    <div class="footer-bottom">
-        <p>copyright &copy;2023 Sabor Nordeste</p>
-    </div>
-
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
