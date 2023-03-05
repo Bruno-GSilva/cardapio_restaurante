@@ -5,9 +5,5 @@ const btn = document.getElementById("btn");
 btn.addEventListener("click", () => {
   formRegister.classList.toggle("active");
   btn.classList.toggle("active");
-  if (btn.classList.contains("active")) {
-    btn.innerHTML = "Registrar";
-  } else {
-    btn.innerHTML = "Login";
-  }
+  btn.classList.contains("active")?btn.innerHTML = "Registrar":btn.innerHTML = "Login";
 });
