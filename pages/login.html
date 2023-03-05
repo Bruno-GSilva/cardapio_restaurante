@@ -7,12 +7,12 @@
     <title>login</title>
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/725/725852.png" type="icon">
     <link rel="stylesheet" href="/css/login.css">
-    <script src="formulario.js" defer></script>
+    <script src="/js/formulario.js" defer></script>
 </head>
 <body>
     <header>
-        <span id="logo"><img src="/images/cardapio/Logo-sabor-nordeste.png"></span>
-        <nav id="navbarHeader">
+        <span><a href=""><img src="/images/cardapio/Logo-sabor-nordeste.png"></a></span>
+        <nav>
           <ul>
             <li><a href="/index.html">menu</a></li>
             <li><a href="#">sobre nos</a></li>
@@ -23,16 +23,16 @@
         <span><a href="/pages/login.html">login</a></span>
     </header>
     <div id="telaLogin">
-        <form id="formRegister">
+        <form id="formRegister" class="active">
             <h3>Se Registre Aqui</h3>
-            <br>
             <label for="email">Email</label>
             <input type="email" id="email" required placeholder="Digite seu email">
             <label for="loginR">login</label>
             <input type="text" id="loginR" required placeholder="Digite seu login">
             <label for="passwordR">password</label>
             <input type="password" id="passwordR" required placeholder="Digite sua senha">
-            <button class="btn" id="btn">Login</button>
+            <button id="btn3">Enviar</button>
+            <button class="btn1 active" id="btn1">Login</button>
         </form>
         <form id="formLogin">
             <h3>Faça seu login</h3>
@@ -41,6 +41,7 @@
             <input type="text" id="login" required placeholder="Digite seu login">
             <label for="password">password</label>
             <input type="password" id="password" required placeholder="Digite sua senha">
+            <button id="btn2">Enviar</button>
         </form>
     </div>
     <footer id="footer">

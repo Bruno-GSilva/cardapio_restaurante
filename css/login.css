@@ -1,10 +1,5 @@
-@import "/css/reset.css";
-@import "/css/index.css";
-body {
-  height: 100vh;
-  width: 100%;
-  background-color: var(--bg-orangeDark);
-}
+@import url(/css/reset.css);
+@import url(/css/index.css);
 
 #telaLogin {
   position: relative;
@@ -26,11 +21,12 @@ body {
   background-color: var(--bg-orange);
 }
 label{
-  margin-right: 130px;
+  margin-right: 110px;
   margin-bottom: 5px;
+  color: var(--bg-black);
 }
 label:last-of-type{
-  margin-right: 110px;
+  margin-right: 80px;
   margin-bottom: 5px;
 }
 
@@ -41,7 +37,7 @@ label:last-of-type{
   border-radius: 15px;
 }
 
-.btn{
+.btn1{
     display: block;
     z-index: 200;
     right: -250px;
@@ -59,7 +55,7 @@ label:last-of-type{
     transition: linear 1.5s;
 }
 
-.btn.active {
+.btn1.active {
   display: flex;
   z-index: 200;
   right: 150px;
@@ -78,23 +74,14 @@ label:last-of-type{
   transition: linear 1.5s;
 }
 
-.btn:hover {
-  transform: translate(-0.05em, -0.05em);
-  box-shadow: 0.15em 0.15em;
-}
-
-.btn:active {
-  transform: translate(0.05em, 0.05em);
-  box-shadow: 0.05em 0.05em;
-}
 #telaLogin > form:first-of-type:after {
   position: absolute;
-  content: attr(valorContent);
+  content: attr(content);
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: var(--bg-black);
-  font-size: 34px;
+  color: var(--bg-white);
+  font-size: 24px;
   font-weight: bold;
   justify-content: center;
   align-items: center;
@@ -112,4 +99,53 @@ label:last-of-type{
 }
 #telaLogin > form:first-of-type.active:after {
   left: 0%;
+}
+#telaLogin > form:first-of-type >h3{
+  margin-bottom: 10px;
+  color: var(--bg-black);
+}
+
+#telaLogin > form:last-of-type > #btn2{
+
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+
+#telaLogin > form:last-of-type > #btn2:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+#telaLogin > form:last-of-type > #btn2:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+#telaLogin > form:first-of-type > #btn3{
+
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
+}
+
+#telaLogin > form:first-of-type > #btn3:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+#telaLogin > form:first-of-type > #btn3:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
 }
