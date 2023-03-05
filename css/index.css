@@ -16,7 +16,6 @@ header > span:first-of-type {
   position: relative;
   width: 150px;
   height: 150px;
-  scale: 0.8;
 }
 header > span:first-of-type > a > img {
   position: absolute;
