@@ -149,3 +149,10 @@ label:last-of-type{
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
 }
+
+@media (max-width: 480px){
+  #telaLogin{
+    flex-direction: column;
+    scale: .9;
+  }
+}
