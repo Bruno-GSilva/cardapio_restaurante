@@ -9,7 +9,7 @@ body{
     background-color: #8ECAE6;
 }
 header {
-    background-color:#023047;
+    background-color:var(--bg-orangeDark);
     box-shadow: 0px 3px 10px #464646;
 }
 

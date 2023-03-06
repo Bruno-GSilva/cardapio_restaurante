@@ -23,5 +23,5 @@ btn1.addEventListener("click", () => {
 
 formLogin.addEventListener('submit', (e) =>{
   e.preventDefault()
-  login.value === "adm" && password.value === "adm"?window.location.href = "http://127.0.0.1:5500/pages/dashboard.html":console.log("negado")
+  login.value === "adm" && password.value === "adm"? window.location.href = "http://127.0.0.1:5501/pages/informacoes.html":console.log("negado")
 })
