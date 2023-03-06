@@ -4,154 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/dashboard.css">
-    <title>Dashboard</title>
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/725/725852.png" type="icon">
+    <link rel="stylesheet" href="../css/products.css">
+    <title>Document</title>
 </head>
 <body>
-    <main>
-        <aside>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1></h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Olá, Bruno</a></li>
+                    <li class="nav-item"><a href="../dashboard-responsivo/dashboardResponsivo.html" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Catalogo</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Definições</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon" onclick="menuShow()">
+                <button><img src="../dashboard-responsivo/assets/img/menu_white_36dp.svg" class="" alt="Menu hamburguer"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
             <ul>
-                <li class="aside-itens">
-                    <img src="images/dashboard/aside/cara.png" alt="Imagem de perfil" class="aside-itens-img">
-                    <a href="">Olá, Bruno</a>
-                </li>
-                <li class="aside-itens">
-                    <img src="images/dashboard/aside/vendas.png" alt="Dashboard" class="aside-itens-img">
-                    <a href="">Dashboard</a>
-                </li>
-                <li class="aside-itens">
-                    <img src="images/dashboard/aside/casa.png" alt="Casa" class="aside-itens-img">
-                    <a href="">Home</a>
-                </li>
-                <li class="aside-itens">
-                    <img src="images/dashboard/aside/catalogo.png" alt="Catálogo" class="aside-itens-img">
-                    <div>
-                        <a href="">Catalogo &#9660</a>
-                        <ul class="dropdown">
-                            <li><a href="categories.html">Categorias</a></li>
-                            <li><a href="products.html">Lista de produtos</a> </li>
-                            <li><a href="dashboard.html">Criar produto</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="aside-itens">
-                    <img src="images/dashboard/aside/definicoes.png" alt="" class="aside-itens-img">
-                    <a href="">Definicoes</a>
-                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Olá, Bruno</a></li>
+                <li class="nav-item"><a href="../dashboard-responsivo/dashboardResponsivo.html" class="nav-link">Dashboard</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Catalogo</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Definições</a></li>
             </ul>
-        </aside>
-        <div class="main">
-            <div class="margin-box">
-                <header>
-                    <h2>Produtos</h2>
-                    <span><img src="images/dashboard/createProd.png" alt="" id="img-header-main"><button id="btnCreate">Criar Produto</button></span>
-                </header>
-                <div id="cards">
-                    <div class="product-card">
-                        <span>
-                            <img src="images/dashboard/hambsoda.png" alt="">
-                            <div id="product-inform">
-                                <div class="product-inform-1line">
-                                    <div>
-                                        <label for="">Código</label>
-                                        <input type="text" placeholder="848593" readonly disabled>
-                                    </div>
-                                    <div>
-                                        <label for="">Nome</label>
-                                        <input type="text" placeholder="Hamburguer" readonly disabled>
-                                    </div>
-                                </div>
-                                <div class="product-inform-2line">
-                                    <label for="">Descrição</label>
-                                    <input  class="product-inform-2line-desc" type="text" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    " readonly disabled>
-                                </div>
-                                <div class="product-inform-3line">
-                                    <div class="product-inform-3line-valor">
-                                        <label for="">Valor</label>
-                                        <input type="text" placeholder="R$ 50,00" readonly disabled>
-                                    </div>
-                                    <div>
-                                        <img src="images/dashboard/Alergics/trigo.png" alt="Free from">
-                                        <img src="images/dashboard/Alergics/leite.png" alt="Free form lactose">
-                                        <img src="images/dashboard/Alergics/planta.png" alt="Vegano">
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
+        </div>
+     </header>
+     <aside>
+        <ul>
+            <li class="aside-itens">
+                <img src="../images/dashboard/aside/cara.png" alt="Imagem de perfil" class="aside-itens-img">
+                <a href="">Olá, Bruno</a>
+            </li>
+            <li class="aside-itens">
+                <img src="../images/dashboard/aside/vendas.png" alt="Dashboard" class="aside-itens-img">
+                <a href="../dashboard-responsivo/dashboardResponsivo.html">Dashboard</a>
+            </li>
+            <li class="aside-itens">
+                <img src="../images/dashboard/aside/casa.png" alt="Casa" class="aside-itens-img">
+                <a href="">Home</a>
+            </li>
+            <li class="aside-itens">
+                <img src="../images/dashboard/aside/catalogo.png" alt="Catálogo" class="aside-itens-img">
+                <div>
+                    <a href="">Catalogo &#9660</a>
+                    <ul class="dropdown">
+                        <li><a href="../pages/informacoes.html">Categorias</a></li>
+                        <li><a href="../pages/products.html">Lista de produtos</a> </li>
+                        <li><a href="../pages/products.html">Criar produto</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="aside-itens">
+                <img src="../images/dashboard/aside/definicoes.png" alt="" class="aside-itens-img">
+                <a href="">Definicoes</a>
+            </li>
+        </ul>
+    </aside>
+    <div class="modal">
+        <div class="fechar" onclick="fechar()">
+            Fechar
+        </div>
+    </div>
+    <div class="content">
+        <div class="box">
+            <div class="inform">
+                <h2>Produtos</h2>
+                <div>
+                    <img src="../images/dashboard/createProd.png" alt="">
+                    <button class="btn-criar" onclick="acao()">Criar Produto</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../images/dashboard/hambsoda.png" alt="hamburguer">
+                <div class="product-inform">
+                    <div class="product-card-1">
+                        <div id="codigo">
+                            <label for="">Código</label>
+                            <input type="text" placeholder="8569" readonly disabled>
+                        </div>
+                        <div id="nome">
+                            <label for="">Nome</label>
+                            <input type="text" placeholder="Hamburguer" readonly disabled>
+                        </div>
                     </div>
-                    <div class="product-card">
-                        <span>
-                            <img src="images/dashboard/pizza.png" alt="">
-                            <div id="product-inform">
-                                <div class="product-inform-1line">
-                                    <div>
-                                        <label for="">Código</label>
-                                        <input type="text" placeholder="848593" readonly disabled>
-                                    </div>
-                                    <div>
-                                        <label for="">Nome</label>
-                                        <input type="text" placeholder="Hamburguer" readonly disabled>
-                                    </div>
-                                </div>
-                                <div class="product-inform-2line">
-                                    <label for="">Descrição</label>
-                                    <input  class="product-inform-2line-desc" type="text" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    " readonly disabled>
-                                </div>
-                                <div class="product-inform-3line">
-                                    <div class="product-inform-3line-valor">
-                                        <label for="">Valor</label>
-                                        <input type="text" placeholder="R$ 50,00" readonly disabled>
-                                    </div>
-                                    <div>
-                                        <img src="images/dashboard/Alergics/trigo.png" alt="Free from">
-                                        <img src="images/dashboard/Alergics/leite.png" alt="Free form lactose">
-                                        <img src="images/dashboard/Alergics/planta.png" alt="Vegano">
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
+                    <div class="product-card-2">
+                        <label for="">Descrição</label>
+                        <input type="text" placeholder="Hamburguer de soja" readonly disabled>
                     </div>
-                    <div class="product-card">
-                        <span>
-                            <img src="images/dashboard/comida.png" alt="">
-                            <div id="product-inform">
-                                <div class="product-inform-1line">
-                                    <div>
-                                        <label for="">Código</label>
-                                        <input type="text" placeholder="848593" readonly disabled>
-                                    </div>
-                                    <div>
-                                        <label for="">Nome</label>
-                                        <input type="text" placeholder="Hamburguer" readonly disabled>
-                                    </div>
-                                </div>
-                                <div class="product-inform-2line">
-                                    <label for="">Descrição</label>
-                                    <input  class="product-inform-2line-desc" type="text" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    " readonly disabled>
-                                </div>
-                                <div class="product-inform-3line">
-                                    <div class="product-inform-3line-valor">
-                                        <label for="">Valor</label>
-                                        <input type="text" placeholder="R$ 50,00" readonly disabled>
-                                    </div>
-                                    <div>
-                                        <img src="images/dashboard/Alergics/trigo.png" alt="Free from">
-                                        <img src="images/dashboard/Alergics/leite.png" alt="Free form lactose">
-                                        <img src="images/dashboard/Alergics/planta.png" alt="Vegano">
-                                    </div>
-                                </div>
-                            </div>
-                        </span>
+                    <div class="product-card-3">
+                        <div>
+                            <label for="">Valor</label>
+                            <input type="text" placeholder="R$ 30,00" readonly disabled>
+                        </div>
                     </div>
-                    
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../images/dashboard/pizza.png" alt="hamburguer">
+                <div class="product-inform">
+                    <div class="product-card-1">
+                        <div id="codigo">
+                            <label for="">Código</label>
+                            <input type="text" placeholder="8569" readonly disabled>
+                        </div>
+                        <div id="nome">
+                            <label for="">Nome</label>
+                            <input type="text" placeholder="Pizza" readonly disabled>
+                        </div>
+                    </div>
+                    <div class="product-card-2">
+                        <label for="">Descrição</label>
+                        <input type="text" placeholder="Pizza de cornbacon" readonly disabled>
+                    </div>
+                    <div class="product-card-3">
+                        <div>
+                            <label for="">Valor</label>
+                            <input type="text" placeholder="R$ 50,00" readonly disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="../images/dashboard/comida.png" alt="hamburguer">
+                <div class="product-inform">
+                    <div class="product-card-1">
+                        <div id="codigo">
+                            <label for="">Código</label>
+                            <input type="text" placeholder="8569" readonly disabled>
+                        </div>
+                        <div id="nome">
+                            <label for="">Nome</label>
+                            <input type="text" placeholder="PF" readonly disabled>
+                        </div>
+                    </div>
+                    <div class="product-card-2">
+                        <label for="">Descrição</label>
+                        <input type="text" placeholder="Prato feito, acompanha peixe" readonly disabled>
+                    </div>
+                    <div class="product-card-3">
+                        <div>
+                            <label for="">Valor</label>
+                            <input type="text" placeholder="R$ 20,00" readonly disabled>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
-</body>
+    </div>
 
+    <script src="../dashboard-responsivo/assets/js/script.js"></script>
+</body>
 </html>
