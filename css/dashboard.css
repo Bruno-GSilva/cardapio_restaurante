@@ -12,7 +12,7 @@ body{
 aside{
     position: fixed;
     width: 467px;
-    background-color: #023047;
+    background-color: var(--bg-orangeDark);
     display: flex;
     height: 100vh;
     justify-content: center;

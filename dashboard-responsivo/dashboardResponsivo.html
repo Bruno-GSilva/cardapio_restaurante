@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/725/725852.png" type="icon">
+    <title>Menu Responsivo</title>
+</head>
+
+<body>
+     <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1></h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Olá, Bruno</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Catalogo</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Definições</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon" onclick="menuShow()">
+                <button><img src="assets/img/menu_white_36dp.svg" class="" alt="Menu hamburguer"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Olá, Bruno</a></li>
+                <li class="nav-item"><a href="../dashboard-responsivo/dashboardResponsivo.html" class="nav-link">Dashboard</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Catalogo</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Definições</a></li>
+            </ul>
+        </div>
+     </header>
+     <aside>
+        <ul>
+            <li class="aside-itens">
+                <img src="../images/dashboard/aside/cara.png" alt="Imagem de perfil" class="aside-itens-img">
+                <a href="">Olá, Bruno</a>
+            </li>
+            <li class="aside-itens">
+                <img src="../images/dashboard/aside/vendas.png" alt="Dashboard" class="aside-itens-img">
+                <a href="dashboardResponsivo.html">Dashboard</a>
+            </li>
+            <li class="aside-itens">
+                <img src="../images/dashboard/aside/casa.png" alt="Casa" class="aside-itens-img">
+                <a href="">Home</a>
+            </li>
+            <li class="aside-itens">
+                <img src="../images/dashboard/aside/catalogo.png" alt="Catálogo" class="aside-itens-img">
+                <div>
+                    <a href="">Catalogo &#9660</a>
+                    <ul class="dropdown">
+                        <li><a href="../pages/informacoes.html">Categorias</a></li>
+                        <li><a href="../pages/products.html">Lista de produtos</a> </li>
+                        <li><a href="../pages/products.html">Criar produto</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="aside-itens">
+                <img src="../images/dashboard/aside/definicoes.png" alt="" class="aside-itens-img">
+                <a href="">Definicoes</a>
+            </li>
+        </ul>
+    </aside>
+    <div class="content">
+        <div class="dashboard-data">
+            <div class="dashboard-data-box">
+                <p>3500</p>
+                <p>Qtd. pedidos</p>
+            </div>
+            <div class="dashboard-data-box">
+                <p>103.500</p>
+                <p>Valor total</p>
+            </div>
+            <div class="dashboard-data-box">
+                <p>17.500</p>
+                <p>Qtd. vendidos</p>
+            </div>
+        </div>
+        <div class="dashboard-vendas">
+            <img src="../images/dashboard/grafico.png" alt="">
+        </div>
+        <div class="dashboard-graphs">
+            <img src="assets/img/graphs/circle-graph.png" alt="Gráfico circular">
+            <div class="box-arm">
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+                <div class="boxes"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
